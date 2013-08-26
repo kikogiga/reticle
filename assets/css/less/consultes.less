@@ -1,0 +1,138 @@
+/*  -----------------------------------------------------------------------------
+
+        6.  Consultes a Dispositius
+                
+    -----------------------------------------------------------------------------  */
+
+//  ==========================================================================
+//  -- Dispositius de tableta (disseny, modificacions, etc)
+//  ==========================================================================
+@media only screen and (min-width: @punt_de_ruptura-tableta) and (max-width: @punt_de_ruptura-escriptori) {
+.contenidor, .contenidor-tableta {
+  width: @contenidor-tableta;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+//  Reticle per a tableta
+//  Per apilar columnes d'amplada completa, si us plau, utilitzeu la classe .tableta-complet
+.tableta-una { width: 6.5%; }
+.tableta-dues { width: 15%; }
+.tableta-tres { width: 23.5%; }
+.tableta-quatre { width: 32%; }
+.tableta-cinc { width: 40.5%; }
+.tableta-sis { width: 49.0%; }
+.tableta-set { width: 57.5%; }
+.tableta-vuit { width: 66%; }
+.tableta-nou { width: 74.5%; }
+.tableta-deu { width: 83%; }
+.tableta-once { width: 91.5%; }
+.tableta-dotze { width: 100%; }
+
+.tableta-complet {
+  clear: both;
+  float: none;
+  width: 100%;
+  margin: 10px 0 0 0;
+  .bloc();
+}
+.tableta-complet:first-child {
+  margin-top: 0;
+}
+.tableta-centrat {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  &:first-child { margin-left: auto; }
+}
+.tableta-text-centrat {
+  text-align: center;
+}
+.tableta-esquerra { float: left; }
+.tableta-dreta { float: right; }
+.tableta-sense-surar { float: none; }
+
+
+.tableta-no { .cap(); }
+.mostrar-tableta { .bloc(); }
+
+
+//  ==========================================================================
+//  -- Estils de pàgines web personalitzades per a dispositius tableta
+//  ==========================================================================
+
+//  Els seus estils de llocs web personalitzats per a dispositius tableta ve aquí ...
+
+
+
+
+} // Fí de consulta a dispositiu tableta */
+
+
+//  ==========================================================================
+//  -- Dispositius mòbils (disseny, modificacions, etc)
+//  ========================================================================== 
+@media only screen and (max-width: @punt_de_ruptura-mobil) {
+
+//  Reticle Mòbils
+//  Per apilar columnes d'amplada completa, si us plau, utilitzeu la classe .mobil-complet 
+.mobil-una { width: 6.5%; }
+.mobil-dues { width: 15%; }
+.mobil-tres { width: 23.5%; }
+.mobil-quatre { width: 32%; }
+.mobil-cinc { width: 40.5%; }
+.mobil-sis { width: 49.0%; }
+.mobil-set { width: 57.5%; }
+.mobil-vuit { width: 66%; }
+.mobil-nou { width: 74.5%; }
+.mobil-deu { width: 83%; }
+.mobil-once { width: 91.5%; }
+.mobil-dotze { width: 100%; }
+
+.mobil-complet {
+  clear: both;
+  float: none;
+  width: 100%;
+  margin: 10px 0 0 0;
+  .bloc();
+}
+.mobil-complet:first-child {
+  margin-top: 0;
+}
+.mobil-centrat {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  &:first-child { margin-left: auto; }
+}
+.mobil-text-centrat {
+  text-align: center;
+}
+
+.mobil-esquerra { float: left; }
+.mobil-dreta { float: right; }
+.mobil-sense-surar { float: none; }
+
+.contenidor, .contenidor-mobil {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+//  mobil Tables
+table th,
+table td {
+  padding: 4px;
+}
+
+.no-mobil { .cap(); }
+.mostrar-mobil { .bloc(); }
+
+
+//  ==========================================================================
+//  -- Estils de pàgines web personalitzades per a dispositius mobil
+//  ==========================================================================
+
+//  Els seus estils de llocs web personalitzats per a dispositius mòbils van aquí ...
+
+
+} // Fí de consulta a dispositiu mobil */

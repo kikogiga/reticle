@@ -1,0 +1,109 @@
+/*  -----------------------------------------------------------------------------
+
+        5.	Reticle
+        
+    -----------------------------------------------------------------------------  */
+
+//  =============================================================================
+//  3.1 - Disposició del Reticle (Sensible)
+//  =============================================================================
+
+//  Seccions i blocs de contingut
+.seccio { position: relative; }
+
+//  Fileres
+.filera { margin: .5em 0; }
+.una-filera { margin: 1em 0; }
+.dues-fileres { margin: 2em 0; }
+.tres-fileres { margin: 3em 0; }
+.quatre-fileres { margin: 4em 0; }
+.cinc-fileres { margin: 5em 0; }
+.sis-fileres { margin: 6em 0; }
+
+.centrat {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenidor {
+  max-width: @contenidor-escriptori;
+  .centrat();
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.contenidor-complet {
+  max-width: @contenidor-escriptori + 20px;
+  .centrat();
+}
+
+.contingut-interior {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+//  Reticle fluid
+.columna {
+  margin-left: 2%;
+  float: left;
+}
+.columna:first-child { margin-left: 0; }
+
+//  Columnes
+.una {
+  width: 6.5%;
+  *width: ~'expression(Math.floor(0.065 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px")';
+}
+.dues {
+  width: 15%;
+  *width: ~'expression(Math.floor(0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px")';
+}
+.tres {
+  width: 23.5%;
+  *width: ~'expression(Math.floor(0.235 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px")';
+}
+.quatre {
+  width: 32%;
+  *width: ~'expression(Math.floor(0.32 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px")';
+}
+.cinc {
+  width: 40.5%;
+  *width: ~'expression(Math.floor(0.40.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px")';
+}
+.sis {
+  width: 49.0%;
+  *width: ~'expression(Math.floor(0.49 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px")';
+}
+.set {
+  width: 57.5%;
+  *width: ~'expression(Math.floor(0.575 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px")';
+}
+.vuit {
+  width: 66%;
+  *width: ~'expression(Math.floor(0.66 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px")';
+}
+.nou {
+  width: 74.5%;
+  *width: ~'expression(Math.floor(0.745 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px")';
+}
+.deu {
+  width: 83%;
+  *width: ~'expression(Math.floor(0.83 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px")';
+}
+.once {
+  width: 91.5%;
+  *width: ~'expression(Math.floor(0.915 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px")';
+}
+.dotze {
+  width: 100%;
+}
+
+.quart { .tres(); }
+.mitja { .sis(); }
+.un-terç { .quatre(); }
+.escriptori-complet { .dotze();}
+
+//  =============================================================================
+//  -- Estils de pàgines web personalitzades per a l'escriptori
+//  =============================================================================
+
+//  Els seus estils de llocs web personalitzats per a l'escriptori aquí...

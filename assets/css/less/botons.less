@@ -1,0 +1,75 @@
+/*  -----------------------------------------------------------------------------
+
+        7.  Botons
+                
+    -----------------------------------------------------------------------------  */
+
+//  Botons personalitzats
+.buto {
+  .arrodonit(0);
+  border: 0;
+  padding: 1em 3em;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+
+  font-size: 1.25rem;
+  .bloc-en-linea();
+}
+.buto-gris {
+  background-color: @gris;
+  
+  &:hover {
+    background-color: @negre;
+    -webkit-tap-highlight-color: @negre;
+    color: @blanc;
+  } // end hover
+  &:active {
+    background-color: @negre;
+  } // end hover
+}
+.buto-taronja {
+  background-color: @groc-fosc;
+  
+  &:hover {
+    background-color: @negre;
+    -webkit-tap-highlight-color: @negre;
+    color: @blanc;
+  } // end hover
+  &:active {
+    background-color: @negre;
+  } // end hover
+}
+.buto-gran {
+padding: 20px 40px;
+}
+.buto-mitja {
+padding: 10px 20px;
+}
+.button[disabled],
+.button.disabled {
+  color: #999;
+  background-color: #f1f1f1;
+}
+
+.no-style-button {
+  .font-size(13);
+  color: #f30;
+  text-decoration: underline;
+  border: 0;
+  background: transparent;
+  height: auto;
+  padding: 0;
+  cursor: pointer;
+  outline: 0;
+
+  &:hover {
+  text-decoration: none;
+  } // end hover
+}
+.no-style-button[disabled],
+.no-style-button.disabled {
+  text-decoration: none;
+  color: #999;
+}

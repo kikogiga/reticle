@@ -1,0 +1,317 @@
+/*  -----------------------------------------------------------------------------
+
+        3.  Ajustos de Document
+                
+    -----------------------------------------------------------------------------  */
+
+//  =============================================================================
+//  3.0 - Ajustos de Document (tipogràfia, enllaços, paràgraf, etc)
+//  ============================================================================= 
+
+//  Body 
+body {
+  .font-size(14);
+  color: #555;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+//  Fort i Cursiva
+b, strong { .fort(); }
+
+//  Enllaços 
+a { color: #f30; }
+a:hover { text-decoration: none; }
+a:focus { outline: thin dotted; }
+a:active, a:hover { outline: 0; }
+
+
+//  Paràgraf i Menut
+p, pre { margin: 1em 0; }
+small { font-size: 80%; }
+
+//  Abreviatures 
+abbr[title] { border-bottom: 1px dotted; }
+
+//  Audio 
+audio, canvas, video {
+  .bloc-en-linea();
+}
+audio:not([controls]) {
+  .cap();
+  height: 0;
+}
+
+//  Menut, 
+//Sub and Sup 
+small { font-size:80%; }
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup { top: -.5em; }
+sub { bottom: -.25em; }
+
+//  Definició 
+dfn { .cursiva(); }
+
+//  Imatges 
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+.imatge-esquerra { margin-right: 20px; }
+.imatge-dreta { margin-left: 20px; }
+
+
+//  3.1 Encapçalaments - h1, h2, h3, h4, h5, h6 & altres (si hi ha)
+//  ============================================================================= 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+h1, .h1 {
+  .font-size(@h1);
+  margin-bottom: .2em;
+}
+h2, .h2 {
+  .font-size(@h2);
+  margin-bottom: .33em;
+}
+h3, .h3 { 
+  .font-size(@h3);
+  margin-bottom: .5em;
+}
+h4, .h4 {
+  .font-size(@h4);
+  margin-bottom: .5em;
+}
+h5, .h5 {
+  .font-size(@h5);
+  margin-bottom: .5em;
+}
+h6, .h6 {
+  .font-size(@h6);
+  margin-bottom: .5em;
+}
+//  Restablir Encapçalaments
+.sense-estil-de-capsalera {
+  margin: 0;
+  font-size: 100%;
+}
+
+//  Regla Horitzontal
+hr {
+  border: 0;
+  background: none;
+  outline: 0;
+  background-color: #ddd;
+  margin: 2em 0;
+  *margin: 1em 0;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 1px;
+}
+
+
+//  3.2 Comilles i Codí - cites de text, comilles, codí, pre, etc
+//  ============================================================================= 
+//  Cites de text i Comilles 
+blockquote {
+  font-family: "Georgia", "Times" serif;
+  .font-size(20);
+  color: #777;
+  margin: 1em 0;
+  .cursiva();
+}
+cite {
+  color: #222;
+  font-style: normal;
+}
+
+q { quotes: none; }
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+//  Marca 
+mark {
+  background: #ff0;
+  color: #111;
+}
+
+//  Codí 
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+code {
+  color: #111;
+  padding: 2px 5px;
+  background-color: #f1f1f1;
+  .arrodonit(3);
+}
+
+//  3.3 Llistes
+//  ============================================================================= 
+dl, menu, ol, ul {
+  margin: 1em 0;
+}
+ul ul, ol ol, ul ol, ol ul { margin: 0; }
+dd { margin: 0 0 0 40px; }
+dt { .fort(); }
+menu, ol, ul { padding: 0 0 0 40px; }
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+//  Eliminar estil de la Llista 
+.sense-estil-de-llista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+//  3.4 Taules
+//  ============================================================================= 
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  word-wrap: break-word; // CSS3 Buscadors
+  -ms-word-wrap: break-word; // IE8
+  *white-space: normal;  // IE7
+}
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+table thead th {
+  vertical-align: bottom;
+  font-weight: bold;
+  background-color: #e1e1e1;
+  color: #333;
+}
+table tfoot td {
+  font-weight: bold;
+}
+table caption {
+  padding: 0.5em;
+  font-style: italic;
+  background-color: #eee;
+  border-bottom: 0;
+  font-weight: bold;
+}
+
+// 3.5 Formularis, etiquetes i entrades
+// ============================================================================= 
+fieldset {
+  border: 0;
+  padding: 0;
+}
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+  .fort();
+}
+label { cursor: pointer; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+input[type=text], 
+input[type=password], 
+input[type=email], 
+input[type=search], 
+input[type=tel],
+textarea {
+  padding: 5px 7px;
+  -webkit-appearance: none; // Traieu Comportament navegador per defecte per a Safari
+  -moz-appearance: none; // Traieu Comportament navegador predeterminat del Firefox
+  .fort();
+  background-color: #fff;
+  color: #777;
+  border: 1px solid #ddd;
+  border-top: 1px solid #999;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+input[type=checkbox], 
+input[type=radio] {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+.casella-de-verificacio {
+  .bloc();
+  margin: .2em 0;
+  input[type=checkbox], 
+  input[type=radio] {
+    .esquerra();
+  }
+  label {
+    padding-left: 5px;
+    overflow: hidden;
+    display: table;
+    *zoom: 1;
+  }
+}
+
+button, input { line-height: normal; }
+button, select { text-transform: none; }
+
+// Botons 
+button, 
+html input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+button[disabled], 
+html input[disabled] { cursor: default; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button, 
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, 
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: none;
+}

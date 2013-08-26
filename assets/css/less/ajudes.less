@@ -1,0 +1,113 @@
+/*  -----------------------------------------------------------------------------
+
+        4.  Neteja, Fixació i Ajudes
+                
+    -----------------------------------------------------------------------------  */
+
+//  ==========================================================================
+//  --  Micro Neteja, fixació i Ajudes
+//  ========================================================================== 
+
+//  Neteja i fixació
+.netejar:before, .netejar:after { content: ""; display: table; } .netejar:after { clear: both; } .netejar { zoom: 1; }
+.seccio:before, .seccio:after { content: ""; display: table; } .seccio:after { clear: both; } .seccio { zoom: 1; }
+.casella-de-verificacio:before, .casella-de-verificacio:after { content: ""; display: table; } .casella-de-verificacio:after { clear: both; } .casella-de-verificacio { zoom: 1; }
+
+//  Ajudes
+.posicio-absoluta {position: absolute;}
+.esquerra { float: left; }
+.dreta { float: right; }
+.bloc { display: block; }
+.bloc-en-linea {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+.en-linia { display: inline; }
+.fort { font-weight: bold; }
+.cursiva { font-style: italic; }
+.text-centrat { text-align: center; }
+.majuscules { text-transform: uppercase; }
+
+.cap, 
+[ocult] {
+  display: none;
+}
+.ocult {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  left: -9999em;
+}
+.visible {
+  clip: auto;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  left: 0;
+}
+//  Marges
+.sense-marges {
+margin: 0;
+}
+.marge-baix {
+  margin-bottom: 20px;
+}
+.marge-dalt {
+  margin-top: 20px;
+}
+.marge-dalt-40 {
+  margin-top: 40px;
+}
+.marge-dalt-50 {
+  margin-top: 50px;
+}
+.marge-dalt-60 {
+  margin-top: 60px;
+}
+
+// Farcits
+
+.farcit-dalt {
+  padding-top: 20px;
+}
+.farcit-baix {
+  padding-bottom: 20px;
+}
+.farcit-dalt-40 {
+  padding-top: 40px;
+}
+.farcit-baix-40 {
+  padding-bottom: 40px;
+}
+
+
+//  Fonts
+
+.font-gran {
+  font-size: 1.8em;
+}
+
+.font-blanca {
+  color: @blanc;
+}
+
+// Estils
+
+.bordejat {
+border: 1px solid #000;
+}
+
+//  Alertes
+.alerta {
+  background-color: #ffc;
+  .bloc();
+  padding: 8px;
+  .arrodonit(5);
+}
+
+.escriptori-no { .cap(); }
