@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="cat">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +11,12 @@
     <header class="capsalera">
       <div class="capsalera-superior">
         <div class="contenidor-complet contenidor-tableta contenidor-mobil netejar">
-            <h1 class="logotip esquerra bloc">Reticle</h1>
-            <nav class="navegacio dreta no-mobil">
+            <h1 class="logotip esquerra bloc mobil-centrat">Reticle</h1>
+            <nav class="navegacio dreta mobil-ocult">
               <ul class="sense-estil-de-llista">
                 <li><a class="enllaç-navegacio actiu" href="/">Inici</a></li>
-                <li><a class="enllaç-navegacio" href="/">Propietats</a></li>
-                <li><a class="enllaç-navegacio" href="/">Documentació</a></li>
+                <li><a class="enllaç-navegacio" href="documentacio/">Documentació</a></li>
+                <li><a class="enllaç-navegacio" href="/">Descarregar</a></li>
               </ul>
             </nav>
         </div>
@@ -25,13 +25,15 @@
         <div class="text-centrat">
           <h2 class="lema">El Marc de Treball receptiu en el teu Idioma</h2>
           <p class="eslogan">Construït per funcionar en dispositius mòbils, tauletes, portatils i ordinadors d'escriptori</p>
-          <div class="butons-de-caracteristiques">
-            <a class="buto buto-gran buto-gris mobil-complet" href="#">Descarrega la darrera compilació</a>
-            <a class="buto buto-gran buto-gris mobil-complet" href="#">Veure demostracions i documents</a>
+          <div class="botons-de-caracteristiques">
+            <a class="boto boto-gran boto-gris mobil-complet" href="#">Descarrega la darrera compilació</a>
+            <a class="boto boto-gran boto-gris mobil-complet" href="#">Veure demostracions i documents</a>
           </div>
           <h3 class="ocult">Construït per als següents dispositius:</h3>
-          <div class="dispositius netejar"></div>
-          <!--<ul class="devices sense-estil-de-llista netejar no-mobile">
+          <div class="dispositius-capsalera tableta-ocult mobil-ocult netejar"></div>
+          <div class="tableta-capsalera escriptori-ocult mostrar-tableta mobil-ocult netejar"></div>
+          <div class="mobil-capsalera escriptori-ocult tableta-ocult mostrar-mobil netejar"></div>
+          <!--<ul class="devices sense-estil-de-llista netejar mobil-ocult">
             <li class="device phone no-tablet"><span class="ocult">Phone</span></li>
             <li class="device desktop"><span class="ocult">Desktop</span></li>
             <li class="device tablet no-tablet"><span class="ocult">Tablet</span></li>
@@ -51,7 +53,7 @@
           </ul>
           <p class="text-centrat">Construït per a tots els dispositius de grans i petits, Reticle té tot cobert.</p>
         </div>
-        <hr class="escriptori-no tableta-no mostrar-mobil">
+        <hr class="escriptori-ocult tableta-ocult mostrar-mobil">
         <div class="columna tres mobil-complet">
           <h2 class="sense-estil-de-capsalera fort majuscules text-centrat marge-baix">Reticle full d'estil</h2>
           <ul class="sense-estil-de-llista text-centrat font-gran">
@@ -60,7 +62,7 @@
           </ul>
           <p class="text-centrat">Estils de tipografia, taules, comentaris, cites, formularis i molt més.</p>
         </div>
-        <hr class="escriptori-no tableta-no mostrar-mobil">
+        <hr class="escriptori-ocult tableta-ocult mostrar-mobil">
         <div class="columna tres mobil-complet">
           <h2 class="sense-estil-de-capsalera fort majuscules text-centrat marge-baix">En tots els navegadors</h2>
           <ul class="sense-estil-de-llista text-centrat font-gran">
@@ -72,7 +74,7 @@
           </ul>
           <p class="text-centrat">IE7 +, i navegadors moderns com Safari, Chrome, Firefox <span class="no-tablet"> i Opera.</span>.</p>
         </div>
-        <hr class="escriptori-no tableta-no mostrar-mobil">
+        <hr class="escriptori-ocult tableta-ocult mostrar-mobil">
         <div class="columna tres mobil-complet">
           <h2 class="sense-estil-de-capsalera fort majuscules text-centrat marge-baix">Fonament impressionant</h2>
           <ul class="sense-estil-de-llista text-centrat font-gran">
@@ -90,16 +92,16 @@
         </span>
       </h2>
       <div class="contenidor-complet contenidor-tableta contenidor-mobil sis-fileres netejar">
-        <img class="columna bloc bordered tableta-centrat no-mobil" src="assets/img/code.jpg" alt="Code">
+        <img class="columna bloc bordered tableta-centrat mobil-ocult" src="assets/img/code.jpg" alt="Code">
         <div class="columna mitja tableta-deu tableta-centrat mobil-complet">
           <h3>Reticle,CodeKit i Sublime Text 2 es igual a Exit</h3>
           <p>
             Després de la descàrrega de Reticle, es bo tindre a les seves mans un compilador CSS com <a href="http://incident57.com/codekit/" target="_blank">CodeKit</a> i un bon editor de codi com <a href="http://www.sublimetext.com/2" target="_blank">Sublime Text Editor 2</a>. Alguns coneixements bàsics d'HTML i CSS son molt recomanables també. Tot junt fa una bona base per al exit!
           </p>
           <span class="block buttons">
-            <a class="buto buto-mitja buto-taronja tableta-complet mobil-complet" href="http://www.sublimetext.com/2" target="_blank">Obtindre Sublime Text Editor</a>
-            <a class="buto buto-mitja buto-taronja tableta-complet mobil-complet" href="http://incident57.com/codekit/" target="_blank">Obtindre CodeKit</a>
-            <a class="buto buto-mitja buto-taronja tableta-complet mobil-complet" href="#">Descarregar Reticle</a>
+            <a class="boto boto-mitja boto-taronja tableta-complet mobil-complet" href="http://www.sublimetext.com/2" target="_blank">Obtindre Sublime Text Editor</a>
+            <a class="boto boto-mitja boto-taronja tableta-complet mobil-complet" href="http://incident57.com/codekit/" target="_blank">Obtindre CodeKit</a>
+            <a class="boto boto-mitja boto-taronja tableta-complet mobil-complet" href="#">Descarregar Reticle</a>
           </span>
         </div>
       </div>
@@ -118,14 +120,14 @@
                 <li>Base d'estils que conté estils de tipografia, comentaris, cites, taules, formularis i més + una reixeta 12 columnes flexibles</li>
               </ul>
             </div>
-            <img class="dreta bloc tableta-centrat no-mobil" src="assets/img/files.png" alt="Files">
+            <img class="dreta bloc tableta-centrat mobil-ocult" src="assets/img/files.png" alt="Files">
           </div>
         </div>
       </div>
 
 
       <div class="contenidor-complet contenidor-tableta contenidor-mobil sis-fileres netejar">
-        <img class="posicio-absoluta bloc bordered tableta-no no-mobil" src="assets/img/docs.png" alt="Docs" style="margin-left: -200px; margin-top: -70px;">
+        <img class="posicio-absoluta bloc bordered tableta-ocult mobil-ocult" src="assets/img/docs.png" alt="Docs" style="margin-left: -200px; margin-top: -70px;">
         <div class="dreta mitja tableta-deu tableta-centrat mobil-complet">
           <h3>Veure la documentació i Demostracions</h3>
           <h4 class="no-style-heading strong"><a href="/base/docs/">Introducció</a></h4>
@@ -158,25 +160,25 @@
           <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
           <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
           <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
-          <div class="posicio-absoluta dotze tableta-dotze mobil-dotze marge-dalt-50 fons-groc-transparent font-blanca">
+          <div class="posicio-absoluta dotze tableta-dotze mobil-once marge-dalt-50 fons-groc-transparent font-blanca">
             <div class="text-centrat">
               <h3>Última Actualització</h3>
-                <p id="github"><span class="block date">31 de Agost, 2013</span> <span class="bloc description"></span> <a href="https://github.com/matthewhartman/base/commit/3be88b97ef3158b998b84ca6e8639652ad89271e" class="font-blanca marge-dalt bloc commit">Commit 3be88b97ef3158b998b84ca6e8639652ad89271e »</a></p>
+                <p id="github"><span class="block date">31 de Agost, 2013</span> <span class="bloc description"></span> <!--<a href="https://github.com/matthewhartman/base/commit/3be88b97ef3158b998b84ca6e8639652ad89271e" class="font-blanca marge-dalt bloc commit">Commit 3be88b97ef3158b998b84ca6e8639652ad89271e »</a>--></p>
             </div>
-            <span class="github-logo bloc no-mobil">
+            <span class="github-logo bloc mobil-ocult">
               <span class="ocult">Github</span>
             </span>
           </div>
         </div>
       </div>
     </section>
-    <footer class="peu text-centrat font-blanca">
-      <strong class="h4 titol bloc">
-        <span class="text-de-titol majuscules fort fons-taronja-fosc font-blanca">
-          Ve <span class="and">i</span> Conquesta
+    <footer class="peu text-centrat font-blanca ">
+      <strong class="h4 titol-gris bloc">
+        <span class="text-de-titol majuscules fort fons-gris">
+          col · labora
         </span>
       </strong>
-      <p>Reticle està en desenvolupament actiu i qualsevol feedback / millores són més que benvingudes. Siéntase lliure de <a href="https://github.com/matthewhartman/base/">veure aquest dipòsit en Github</a>.</p>
+      <p class="contenidor-complet contenidor-tableta contenidor-mobil netejar">Reticle està en desenvolupament actiu i qualsevol comentari per fer millores són més que benvinguts. Ets lliure de <br><a href="https://github.com/matthewhartman/base/">veure aquest dipòsit en Github</a></p>
     </footer>
     
   

@@ -5,7 +5,7 @@
     -----------------------------------------------------------------------------  */
 
 //  Botons personalitzats
-.buto {
+.boto {
   .arrodonit(0);
   border: 0;
   padding: 1em 3em;
@@ -17,7 +17,7 @@
   font-size: 1.25rem;
   .bloc-en-linea();
 }
-.buto-gris {
+.boto-gris {
   background-color: @gris;
   
   &:hover {
@@ -29,7 +29,7 @@
     background-color: @negre;
   } // end hover
 }
-.buto-taronja {
+.boto-taronja {
   background-color: @groc-fosc;
   
   &:hover {
@@ -41,19 +41,19 @@
     background-color: @negre;
   } // end hover
 }
-.buto-gran {
+.boto-gran {
 padding: 20px 40px;
 }
-.buto-mitja {
+.boto-mitja {
 padding: 10px 20px;
 }
-.button[disabled],
-.button.disabled {
-  color: #999;
-  background-color: #f1f1f1;
+.boto[disabled],
+.boto.disabled {
+  color: @gris-fort-fosc;
+  background-color: @gris-fosc;
 }
 
-.no-style-button {
+.boto-sense-estil {
   .font-size(13);
   color: #f30;
   text-decoration: underline;
@@ -68,8 +68,8 @@ padding: 10px 20px;
   text-decoration: none;
   } // end hover
 }
-.no-style-button[disabled],
-.no-style-button.disabled {
+.boto-sense-estil[disabled],
+.boto-sense-estil.disabled {
   text-decoration: none;
   color: #999;
 }

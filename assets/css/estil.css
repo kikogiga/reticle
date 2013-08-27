@@ -281,7 +281,7 @@ samp {
 code {
   color: #111;
   padding: 2px 5px;
-  background-color: #f1f1f1;
+  background-color: #bdc3c7;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -324,8 +324,8 @@ table {
   table-layout: fixed;
   border-collapse: collapse;
   border-spacing: 0;
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-right: 1px solid #bdc3c7;
+  border-bottom: 1px solid #bdc3c7;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
   *white-space: normal;
@@ -335,8 +335,8 @@ table td {
   padding: 8px;
   text-align: left;
   vertical-align: top;
-  border-top: 1px solid #eee;
-  border-left: 1px solid #eee;
+  border-top: 1px solid #bdc3c7;
+  border-left: 1px solid #bdc3c7;
 }
 table thead th {
   vertical-align: bottom;
@@ -350,7 +350,7 @@ table tfoot td {
 table caption {
   padding: 0.5em;
   font-style: italic;
-  background-color: #eee;
+  background-color: #bdc3c7;
   border-bottom: 0;
   font-weight: bold;
 }
@@ -455,6 +455,32 @@ textarea {
   overflow: auto;
   vertical-align: top;
   resize: none;
+}
+.dispositius-capsalera {
+  background: url(../img/dispositius.png) no-repeat;
+  width: 100%;
+  display: block;
+  background-size: contain;
+  height: 240px;
+}
+.tableta-capsalera {
+  background-position: -27px;
+  background: url(../img/tableta.png) no-repeat;
+  width: 100%;
+  display: block;
+  background-size: cover;
+  left: -35px;
+  height: 240px;
+  position: relative;
+}
+.mobil-capsalera {
+  background: url(../img/mobil.png) no-repeat;
+  width: 100%;
+  display: block;
+  background-size: cover;
+  height: 240px;
+  position: relative;
+  left: -3%;
 }
 /*  -----------------------------------------------------------------------------
 
@@ -587,15 +613,13 @@ textarea {
   border: 1px solid #000;
 }
 .alerta {
-  background-color: #ffc;
+  background-color: #e74c3c;
+  color: #ecf0f1;
   display: block;
   padding: 8px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-}
-.escriptori-no {
-  display: none;
 }
 /*  -----------------------------------------------------------------------------
 
@@ -715,6 +739,9 @@ textarea {
 .escriptori-complet {
   width: 100%;
 }
+.escriptori-ocult {
+  display: none;
+}
 /*  -----------------------------------------------------------------------------
 
         6.  Consultes a Dispositius
@@ -793,7 +820,7 @@ textarea {
   .tableta-sense-surar {
     float: none;
   }
-  .tableta-no {
+  .tableta-ocult {
     display: none;
   }
   .mostrar-tableta {
@@ -876,7 +903,7 @@ textarea {
   table td {
     padding: 4px;
   }
-  .no-mobil {
+  .mobil-ocult {
     display: none;
   }
   .mostrar-mobil {
@@ -888,7 +915,7 @@ textarea {
         7.  Botons
                 
     -----------------------------------------------------------------------------  */
-.buto {
+.boto {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -903,40 +930,40 @@ textarea {
   *zoom: 1;
   *display: inline;
 }
-.buto-gris {
+.boto-gris {
   background-color: #ecf0f1;
 }
-.buto-gris:hover {
+.boto-gris:hover {
   background-color: #000000;
   -webkit-tap-highlight-color: #000000;
   color: #ffffff;
 }
-.buto-gris:active {
+.boto-gris:active {
   background-color: #000000;
 }
-.buto-taronja {
+.boto-taronja {
   background-color: #f39c12;
 }
-.buto-taronja:hover {
+.boto-taronja:hover {
   background-color: #000000;
   -webkit-tap-highlight-color: #000000;
   color: #ffffff;
 }
-.buto-taronja:active {
+.boto-taronja:active {
   background-color: #000000;
 }
-.buto-gran {
+.boto-gran {
   padding: 20px 40px;
 }
-.buto-mitja {
+.boto-mitja {
   padding: 10px 20px;
 }
-.button[disabled],
-.button.disabled {
-  color: #999;
-  background-color: #f1f1f1;
+.boto[disabled],
+.boto.disabled {
+  color: #7f8c8d;
+  background-color: #bdc3c7;
 }
-.no-style-button {
+.boto-sense-estil {
   font-size: 13px;
   font-size: 0.8125rem;
   color: #f30;
@@ -948,11 +975,11 @@ textarea {
   cursor: pointer;
   outline: 0;
 }
-.no-style-button:hover {
+.boto-sense-estil:hover {
   text-decoration: none;
 }
-.no-style-button[disabled],
-.no-style-button.disabled {
+.boto-sense-estil[disabled],
+.boto-sense-estil.disabled {
   text-decoration: none;
   color: #999;
 }
@@ -977,6 +1004,35 @@ textarea {
 .enllaç-navegacio:active {
   color: #fff;
   border: 1px solid #c0392b;
+}
+.navegacio-documentacio {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: normal;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: #222;
+  background-image: url(../img/motivo-lineas.png);
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: left top;
+}
+.navegacio-documentacio ul li {
+  display: inline-block;
+  padding: 10px 5px;
+  color: #d35400;
+}
+.navegacio-documentacio ul li a {
+  color: #d35400;
+  text-decoration: none;
+}
+.enllaç-navegacio-documentacio.actiu,
+.enllaç-navegacio-documentacio:hover,
+.enllaç-navegacio-documentacio:active {
+  color: #ecf0f1;
 }
 @font-face {
   font-family: 'icomoon';
@@ -6081,9 +6137,9 @@ you can use the generic selector below, but it's slower:
 }
 /*  -----------------------------------------------------------------------------
 
-        &.  Reticle Marc de Treball
-        
-    -----------------------------------------------------------------------------  */
+    &.  Reticle Marc de Treball
+    
+-----------------------------------------------------------------------------  */
 body {
   color: #2c3e50;
   background-color: #222;
@@ -6119,6 +6175,7 @@ a:hover {
 .logotip {
   font-family: monotonregular;
   font-size: 4em;
+  width: 255px;
 }
 .logotip p {
   font-family: monaco;
@@ -6149,13 +6206,6 @@ a:hover {
 .butons-de-caracteristiques {
   margin: 60px 0 10px 0;
 }
-.dispositius {
-  background: url(../img/dispositius.png) no-repeat;
-  width: 100%;
-  display: block;
-  background-size: contain;
-  height: 240px;
-}
 .caracteristiques {
   color: #fff;
   padding: 50px 0;
@@ -6170,11 +6220,24 @@ a:hover {
   text-align: center;
   margin-bottom: 30px;
 }
+.titol-gris {
+  color: #d35400;
+  border-bottom: 1px solid #ecf0f1;
+  text-align: center;
+  margin-bottom: 30px;
+}
 .text-de-titol {
   position: relative;
   top: 12px;
   padding: 0 20px;
   background-color: #ecf0f1;
+}
+.subtitol {
+  font-weight: 300;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: normal;
+  color: #777;
 }
 .fons-groc {
   background-color: #f39c12;
@@ -6188,37 +6251,25 @@ a:hover {
 .fons-taronja-fosc {
   background-color: #d35400;
 }
+.fons-gris {
+  background-color: #ecf0f1;
+}
 .altura-de-columna {
   height: 200px;
 }
-.pixel1 {
-  float: left;
-  width: 20px;
-  height: 20px;
-  background-color: #1abc9c;
+.peu {
+  display: block;
 }
-.pixel2 {
-  float: left;
+.nombre-de-linea {
+  background-color: #222;
+  color: #fff;
+  padding: 4px;
   width: 20px;
-  height: 20px;
-  background-color: #16a085;
+  display: inline-block;
+  text-align: right;
 }
-.pixel3 {
-  float: left;
-  width: 20px;
-  height: 20px;
-  background-color: #2ecc71;
-}
-.pixel4 {
-  float: left;
-  width: 20px;
-  height: 20px;
-  background-color: #27ae60;
-}
-.copyright {
-  position: relative;
-  margin: 0 auto;
-  width: 300px;
-  font-family: helvetica;
-  font-size: 0.8em;
+pre {
+  background-color: #bdc3c7;
+  overflow-x: scroll;
+  overflow-y: none;
 }

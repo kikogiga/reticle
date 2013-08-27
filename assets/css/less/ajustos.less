@@ -156,7 +156,7 @@ code, kbd, pre, samp {
 code {
   color: #111;
   padding: 2px 5px;
-  background-color: #f1f1f1;
+  background-color: @gris-fosc;
   .arrodonit(3);
 }
 
@@ -187,8 +187,8 @@ table {
   table-layout: fixed;
   border-collapse: collapse;
   border-spacing: 0;
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-right: 1px solid @gris-fosc;
+  border-bottom: 1px solid @gris-fosc;
   word-wrap: break-word; // CSS3 Buscadors
   -ms-word-wrap: break-word; // IE8
   *white-space: normal;  // IE7
@@ -198,8 +198,8 @@ table td {
   padding: 8px;
   text-align: left;
   vertical-align: top;
-  border-top: 1px solid #eee;
-  border-left: 1px solid #eee;
+  border-top: 1px solid @gris-fosc;
+  border-left: 1px solid @gris-fosc;
 }
 table thead th {
   vertical-align: bottom;
@@ -213,7 +213,7 @@ table tfoot td {
 table caption {
   padding: 0.5em;
   font-style: italic;
-  background-color: #eee;
+  background-color: @gris-fosc;
   border-bottom: 0;
   font-weight: bold;
 }
@@ -314,4 +314,32 @@ textarea {
   overflow: auto;
   vertical-align: top;
   resize: none;
+}
+
+.dispositius-capsalera {
+background: url(../img/dispositius.png) no-repeat;
+width: 100%;
+display: block;
+background-size: contain;
+height: 240px;
+}
+.tableta-capsalera {
+background-position: -27px;
+background: url(../img/tableta.png) no-repeat;
+width: 100%;
+display: block;
+background-size: cover;
+left: -35px;
+height: 240px;
+position: relative;
+}
+.mobil-capsalera {
+background: url(../img/mobil.png) no-repeat;
+width: 100%;
+display: block;
+background-size: cover;
+height: 240px;
+position: relative;
+left: -3%;
+
 }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="cat">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reticle - Documentació del Marc de Treball</title>
+    <link rel="stylesheet" href="../assets/css/estil.css">
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header class="capsalera">
+      <div class="capsalera-superior">
+        <div class="contenidor-complet contenidor-tableta contenidor-mobil netejar">
+            <h1 class="logotip esquerra bloc mobil-centrat">Reticle</h1>
+            <nav class="navegacio dreta mobil-ocult">
+              <ul class="sense-estil-de-llista">
+                <li><a class="enllaç-navegacio" href="../">Inici</a></li>
+                <li><a class="enllaç-navegacio actiu" href="/">Documentació</a></li>
+                <li><a class="enllaç-navegacio" href="/">Descarregar</a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+      <div class="navegacio-documentacio bloc netejar">
+        <a href="#" class="nav-toggle escriptori-ocult tableta-ocult mostrar-mobil">Navegació <span class="arfilera">+</span></a>
+        <div class="contenidor-complet contenidor-tableta contenidor-mobil netejar ">
+          <ul class="menu dreta mobil-ocult">
+            <li><a class="enllaç-navegacio-documentacio" href="index.html">Benvingut a Reticle!</a></li>
+            <li><a class="enllaç-navegacio-documentacio" href="reticle.html">Disseny de reticle</a></li>
+            <li><a class="enllaç-navegacio-documentacio" href="tipografia.html">Tipografia</a></li>
+            <li><a class="enllaç-navegacio-documentacio" href="taules.html">Taules</a></li>
+            <li><a class="enllaç-navegacio-documentacio actiu" href="formularis.html">Formularis</a></li>
+            <li><a class="enllaç-navegacio-documentacio" href="botons.html">Botons</a></li>
+            <li><a class="enllaç-navegacio-documentacio" href="#">Descarregar</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="fons-gris">
+      <div class="contenidor contingut-interior">
+        
+        <h1>Elements de formulari</h1>
+        <form action="#" method="get">
+          <fieldset class="filera">
+            <legend>Entrada Estàndard</legend>
+              <label for="name">El seu nom complet: (camp normal)</label>
+              <input type="text" name="name" id="name" value="" placeholder="El seu nom ...">
+          </fieldset>
+
+          <hr>
+
+          <fieldset class="filera">
+            <legend>Caselles de verificació i selectors</legend>
+            <span class="casella-de-verificacio">
+              <input type="checkbox" name="checkbox" id="checkbox">
+              <label for="checkbox">Una etiqueta d'una sola línia</label>
+            </span>
+            <span class="casella-de-verificacio">
+              <input type="checkbox" name="multi-checkbox" id="multi-checkbox">
+              <label for="multi-checkbox">Una etiqueta amb <br> multiples <br> linies </label>
+            </span>
+            <span class="casella-de-verificacio">
+              <input type="radio" name="radio" id="radio">
+              <label for="radio">Un sol exemple de selector de línia</label>
+            </span>
+            <span class="casella-de-verificacio">
+              <input type="radio" name="radio" id="multi-radio">
+              <label for="multi-radio">Una etiqueta amb <br> multiples <br> linies</label>
+            </span>
+          </fieldset>
+
+          <hr>
+
+          <fieldset class="filera">
+            <legend>Seleccionar i Multiples Seleccions</legend>
+            <label for="select">Seleccionar</label>
+            <select name="select" id="select">
+              <optgroup label="Example">
+              <option value="excellent">Excel · lent</option>
+              <option value="average">Mitjana</option>
+              <option value="poor">Pobre</option>
+            </optgroup></select>
+            
+            <div class="filera">
+              <label for="multi-select">Multiples Seleccions</label>
+              <select name="multi-select" id="multi-select" multiple="">
+                <optgroup label="Example">
+                <option value="excellent">Excel · lent</option>
+                <option value="average">Mitjana</option>
+                <option value="poor">Pobre</option>
+              </optgroup></select>
+            </div>
+          </fieldset>
+
+          <hr>
+
+          <fieldset class="filera">
+            <legend>Àrea de text</legend>
+              <label for="textarea">Àrea de text:</label>
+              <textarea name="textarea" id="textarea" fileras="5"></textarea>
+          </fieldset>
+
+        </form>
+  
+
+  
+
+        
+        
+      </div>
+    </div>
+    
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="../assets/js/plugins-ck.js"></script>
+  <script src="../assets/js/script-ck.js"></script>
+  
+  </body>
+</html>
