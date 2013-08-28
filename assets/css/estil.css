@@ -6268,6 +6268,9 @@ a:hover {
   display: inline-block;
   text-align: right;
 }
+.commit {
+  font-size: 11px;
+}
 pre {
   background-color: #bdc3c7;
   overflow-x: scroll;
