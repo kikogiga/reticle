@@ -11,8 +11,6 @@
 
     <link rel="stylesheet" href="assets/css/estil.css">
 
-    <link rel="stylesheet" href="assets/css/plugins/snap.css">
-
   </head>
   <body>
     
@@ -219,41 +217,8 @@
     
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
-  <script type="text/javascript" src="assets/js/plugins/snap.js"></script>
-  <script type="text/javascript">
-      var snapper = new Snap({
-          element: document.getElementById('content'),
-          disable: 'right'
-      });
-
-      var addEvent = function addEvent(element, eventName, func) {
-        if (element.addEventListener) {
-            return element.addEventListener(eventName, func, false);
-          } else if (element.attachEvent) {
-              return element.attachEvent("on" + eventName, func);
-          }
-      };
-
-      addEvent(document.getElementById('open-left'), 'click', function(){
-        snapper.open('left');
-      });
-
-      /* Prevent Safari opening links when viewing as a Mobile App */
-      (function (a, b, c) {
-          if(c in b && b[c]) {
-              var d, e = a.location,
-                  f = /^(a|html)$/i;
-              a.addEventListener("click", function (a) {
-                  d = a.target;
-                  while(!f.test(d.nodeName)) d = d.parentNode;
-                  "href" in d && (d.href.indexOf("http") || ~d.href.indexOf(e.host)) && (a.preventDefault(), e.href = d.href)
-              }, !1)
-          }
-      })(document, window.navigator, "standalone");
-  </script>
-
   <script src="assets/js/plugins-ck.js"></script>
   <script src="assets/js/script-ck.js"></script>
-  
+
   </body>
 </html>
