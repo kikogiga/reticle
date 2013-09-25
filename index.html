@@ -1,194 +1,257 @@
 <!DOCTYPE html>
 <html lang="cat">
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reticle - Marc de Treball</title>
     <meta name="description" content="El Marc de Treball receptiu en el teu Idioma">
-    <link rel="stylesheet" href="assets/css/estil.css">
+    
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="assets/css/estil.css">
+
+    <link rel="stylesheet" href="assets/css/plugins/snap.css">
+
   </head>
   <body>
-    <header class="capsalera">
-      <div class="capsalera-superior">
-        <div class="contenidor-complet contenidor-tableta contenidor-mobil netejar">
-            <h1 class="logotip esquerra bloc mobil-centrat">Reticle</h1>
-            <nav class="navegacio dreta mobil-ocult">
-              <ul class="sense-estil-de-llista">
-                <li><a class="enllaç-navegacio actiu" href="/">Inici</a></li>
-                <li><a class="enllaç-navegacio" href="documentacio/">Documentació</a></li>
-                <li><a class="enllaç-navegacio" href="https://github.com/kikogirbes/reticle/archive/master.zip">Descarregar</a></li>
-              </ul>
-            </nav>
+    
+    <div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-left">
+            <div>
+                
+                <h3>Reticle Menu</h3>
+                <ul>
+                    <li><a href="/">Inici</a></li>
+                    <li><a href="documentacio/">Documentació</a></li>
+                </ul>
+                <div>
+                    <p>Un marc super simple, sensible construït per funcionar en dispositius mòbils, tabletes, portatils i ordinadors d'escriptori.</p>
+                    <p>Reticle es desenvolupa en LESS, un poderós CSS pre-processador que ajuda a escriure més net i organitzat, CSS, ben estructurat que es pot mantenir fàcilment amb el temps. Base suporta tots els principals navegadors i navegadors antics com Internet Explorer 7.</p>
+                </div>
+            </div>
         </div>
+        <div class="snap-drawer snap-drawer-right"></div>
+    </div>
+    
+    <div id="content" class="snap-content">
+      <div id="toolbar" class="escriptori-ocult mostrar-tableta mostrar-mobil">
+          <a href="#" id="open-left"></a>
       </div>
-      <div class="contenidor-complet contenidor-tableta contenidor-mobil netejar">
-        <div class="text-centrat">
-          <h2 class="lema">El Marc de Treball receptiu en el teu Idioma</h2>
-          <p class="eslogan">Construït per funcionar en dispositius mòbils, tauletes, portatils i ordinadors d'escriptori</p>
-          <div class="botons-de-caracteristiques">
-            <a class="boto boto-gran boto-gris mobil-complet" href="https://github.com/kikogirbes/reticle/archive/master.zip">Descarrega la darrera compilació</a>
-            <a class="boto boto-gran boto-gris mobil-complet" href="documentacio/">Veure demostracions i documents</a>
-          </div>
-          <h3 class="ocult">Construït per als següents dispositius:</h3>
-          <div class="dispositius-capsalera tableta-ocult mobil-ocult netejar"></div>
-          <div class="tableta-capsalera escriptori-ocult mostrar-tableta mobil-ocult netejar"></div>
-          <div class="mobil-capsalera escriptori-ocult tableta-ocult mostrar-mobil netejar"></div>
-          <!--<ul class="devices sense-estil-de-llista netejar mobil-ocult">
-            <li class="device phone no-tablet"><span class="ocult">Phone</span></li>
-            <li class="device desktop"><span class="ocult">Desktop</span></li>
-            <li class="device tablet no-tablet"><span class="ocult">Tablet</span></li>
-          </ul>-->
-        </div>
-      </div>
-    </header>
-    <section class="caracteristiques">
-      <div class="contenidor-complet contenidor-tableta contenidor-mobil netejar">
-        <div class="columna tres mobil-complet">
-          <h2 class="sense-estil-de-capsalera fort majuscules text-centrat marge-baix">Disseny receptiu</h2>
-          <ul class="sense-estil-de-llista text-centrat font-gran">
-            <li class="icon-mobile text-centrat en-linia"></li>
-            <li class="icon-tablet text-centrat en-linia"></li>
-            <li class="icon-laptop text-centrat en-linia"></li>
-            <li class="icon-screen text-centrat en-linia"></li>
-          </ul>
-          <p class="text-centrat">Construït per a tots els dispositius de grans i petits, Reticle té tot cobert.</p>
-        </div>
-        <hr class="escriptori-ocult tableta-ocult mostrar-mobil">
-        <div class="columna tres mobil-complet">
-          <h2 class="sense-estil-de-capsalera fort majuscules text-centrat marge-baix">Reticle full d'estil</h2>
-          <ul class="sense-estil-de-llista text-centrat font-gran">
-            <li class="icon-file-css text-centrat en-linia"></li>
-            <li class="icon-file-xml text-centrat en-linia"></li>
-          </ul>
-          <p class="text-centrat">Estils de tipografia, taules, comentaris, cites, formularis i molt més.</p>
-        </div>
-        <hr class="escriptori-ocult tableta-ocult mostrar-mobil">
-        <div class="columna tres mobil-complet">
-          <h2 class="sense-estil-de-capsalera fort majuscules text-centrat marge-baix">En tots els navegadors</h2>
-          <ul class="sense-estil-de-llista text-centrat font-gran">
-            <li class="icon-safari text-centrat en-linia"></li>
-            <li class="icon-firefox text-centrat en-linia"></li>
-            <li class="icon-chrome text-centrat en-linia"></li>
-            <li class="icon-IE text-centrat en-linia"></li>
-            <li class="icon-opera text-centrat en-linia"></li>
-          </ul>
-          <p class="text-centrat">IE7 +, i navegadors moderns com Safari, Chrome, Firefox <span class="no-tablet"> i Opera.</span>.</p>
-        </div>
-        <hr class="escriptori-ocult tableta-ocult mostrar-mobil">
-        <div class="columna tres mobil-complet">
-          <h2 class="sense-estil-de-capsalera fort majuscules text-centrat marge-baix">Fonament impressionant</h2>
-          <ul class="sense-estil-de-llista text-centrat font-gran">
-            <li class="icon-html5 text-centrat en-linia"></li>
-            <li class="icon-css3 text-centrat en-linia"></li>
-          </ul>
-          <p class="text-centrat">Construït sobre Normalize.css i inclou la majoria dels estils i el disseny. Tot escrit en HTML5 i CSS3.</p>
-        </div>
-      </div>
-    </section>
-    <section class="contingut">
-      <h2 class="h4 titol">
-        <span class="text-de-titol majuscules fort">
-          Començar amb Reticle
-        </span>
-      </h2>
-      <div class="contenidor-complet contenidor-tableta contenidor-mobil sis-fileres netejar">
-        <img class="columna bloc bordered tableta-centrat mobil-ocult" src="assets/img/code.jpg" alt="Code">
-        <div class="columna mitja tableta-deu tableta-centrat mobil-complet">
-          <h3>Reticle,CodeKit i Sublime Text 2 es igual a Exit</h3>
-          <p>
-            Després de la descàrrega de Reticle, es bo tindre a les seves mans un compilador CSS com <a href="http://incident57.com/codekit/" target="_blank">CodeKit</a> i un bon editor de codi com <a href="http://www.sublimetext.com/2" target="_blank">Sublime Text Editor 2</a>. Alguns coneixements bàsics d'HTML i CSS son molt recomanables també. Tot junt fa una bona base per al exit!
-          </p>
-          <span class="block buttons">
-            <a class="boto boto-mitja boto-taronja tableta-complet mobil-complet" href="http://www.sublimetext.com/2" target="_blank">Obtindre Sublime Text Editor</a>
-            <a class="boto boto-mitja boto-taronja tableta-complet mobil-complet" href="http://incident57.com/codekit/" target="_blank">Obtindre CodeKit</a>
-            <a class="boto boto-mitja boto-taronja tableta-complet mobil-complet" href="https://github.com/kikogirbes/reticle/archive/master.zip">Descarregar Reticle</a>
-          </span>
-        </div>
-      </div>
-
-      <div class="fons-groc">
-        <div class="contenidor-complet contenidor-tableta contenidor-mobil sis-fileres farcit-dalt-40 farcit-baix-40 netejar ">
+      <header class="capsalera">
+        <div class="capsalera-superior">
           <div class="contenidor-complet contenidor-tableta contenidor-mobil netejar">
-            <div class="columna mitja tableta-deu tableta-centrat mobil-complet">
-              <h3>Busseig en l'estructura de Reticle</h3>
-              <strong>Inclou el següent conjunt d'arxius:</strong>
-              <ul>
-                <li>Arxius de LESS per personalitzar fàcilment el seu full d'estil de Reticle</li>
-                <li>Bàsic de la plantilla HTML5 que inclou jQuery per començar</li>
-                <li>Arxiu javascript per defecte amb millores de base i modernizr.js i fittext.js</li>
-                <li>Les tres mides d'icones tàctils d'Apple per l'iPhone 3, iPad i iPhone 4 amb retina + el favicon estàndard per a tots els navegadors web</li>
-                <li>Base d'estils que conté estils de tipografia, comentaris, cites, taules, formularis i més + una reixeta 12 columnes flexibles</li>
-              </ul>
-            </div>
-            <img class="dreta bloc tableta-centrat mobil-ocult" src="assets/img/files.png" alt="Files">
+              <h1 class="logotip esquerra bloc mobil-centrat">Reticle</h1>
+              <nav class="navegacio dreta mobil-ocult">
+                <ul class="sense-estil-de-llista">
+                  <li><a class="enllaç-navegacio actiu" href="/">Inici</a></li>
+                  <li><a class="enllaç-navegacio" href="documentacio/">Documentació</a></li>
+                  <li><a class="enllaç-navegacio" href="https://github.com/kikogirbes/reticle/archive/master.zip">Descarregar</a></li>
+                </ul>
+              </nav>
           </div>
         </div>
-      </div>
-
-
-      <div class="contenidor-complet contenidor-tableta contenidor-mobil sis-fileres netejar">
-        <img class="posicio-absoluta bloc bordered tableta-ocult mobil-ocult" src="assets/img/docs.png" alt="Docs" style="margin-left: -200px; margin-top: -70px;">
-        <div class="dreta mitja tableta-deu tableta-centrat mobil-complet">
-          <h3>Veure la documentació i Demostracions</h3>
-          <h4 class="no-style-heading strong"><a href="documentacio/">Introducció</a></h4>
-          <p class="sense-marges">
-            Una visió general de la base i els arxius i components inclosos.
-          </p>
-          <hr class="marge-baix">
-          <h4 class="no-style-heading strong"><a href="documentacio/reticle.html">Disseny de Reticle</a></h4>
-          <p class="sense-marges">
-           El sistema de xarxa de gran abast que utilitza una variació del sistema de la reticle 960.
-          </p>
-          <hr class="marge-baix">
-          <h4 class="no-style-heading strong"><a href="documentacio/tipografia.html">Tipografia</a></h4>
-          <p class="sense-marges">
-            De valors predeterminats globals a tota la tipografia, aquesta secció té tot.
-          </p>
-        </div>
-      </div>
-      <div class="fons-groc filera">
-        <div class="contenidor-complet contenidor-tableta contenidor-mobil netejar seccio">
-          <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
-          <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
-          <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
-          <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
-          <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
-          <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
-          <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
-          <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
-          <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
-          <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
-          <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
-          <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
-          <div class="posicio-absoluta dotze tableta-dotze mobil-once marge-dalt-50 fons-groc-transparent font-blanca">
-            <div class="text-centrat">
-              <h3>Última Actualització</h3>
-                <p id="github">
-                  <span class="block date">28 de Agost, 2013</span> 
-                  <span class="bloc description"></span>
-                  <a href="https://github.com/kikogirbes/reticle/commit/8d645cd1a9f76ad7d56d3e25a8eb4a641aac2f52" target="_blank" class="font-blanca marge-dalt bloc commit">Commit 8d645cd1a9f76ad7d56d3e25a8eb4a641aac2f52 »
-                  </a>
-                </p>
+        <div class="contenidor-complet contenidor-tableta contenidor-mobil netejar">
+          <div class="text-centrat">
+            <h2 class="lema">El Marc de Treball receptiu en el teu Idioma</h2>
+            <p class="eslogan">Construït per funcionar en dispositius mòbils, tauletes, portatils i ordinadors d'escriptori</p>
+            <div class="botons-de-caracteristiques">
+              <a class="boto boto-gran boto-gris mobil-complet" href="https://github.com/kikogirbes/reticle/archive/master.zip">Descarrega la darrera compilació</a>
+              <a class="boto boto-gran boto-gris mobil-complet" href="documentacio/">Veure demostracions i documents</a>
             </div>
-            <span class="github-logo bloc mobil-ocult">
-              <span class="ocult">Github</span>
+            <h3 class="ocult">Construït per als següents dispositius:</h3>
+            <div class="dispositius-capsalera tableta-ocult mobil-ocult netejar"></div>
+            <div class="tableta-capsalera escriptori-ocult mostrar-tableta mobil-ocult netejar"></div>
+            <div class="mobil-capsalera escriptori-ocult tableta-ocult mostrar-mobil netejar"></div>
+            <!--<ul class="devices sense-estil-de-llista netejar mobil-ocult">
+              <li class="device phone no-tablet"><span class="ocult">Phone</span></li>
+              <li class="device desktop"><span class="ocult">Desktop</span></li>
+              <li class="device tablet no-tablet"><span class="ocult">Tablet</span></li>
+            </ul>-->
+          </div>
+        </div>
+      </header>
+      <section class="caracteristiques">
+        <div class="contenidor-complet contenidor-tableta contenidor-mobil netejar">
+          <div class="columna tres mobil-complet">
+            <h2 class="sense-estil-de-capsalera fort majuscules text-centrat marge-baix">Disseny receptiu</h2>
+            <ul class="sense-estil-de-llista text-centrat font-gran">
+              <li class="icon-mobile text-centrat en-linia"></li>
+              <li class="icon-tablet text-centrat en-linia"></li>
+              <li class="icon-laptop text-centrat en-linia"></li>
+              <li class="icon-screen text-centrat en-linia"></li>
+            </ul>
+            <p class="text-centrat">Construït per a tots els dispositius de grans i petits, Reticle té tot cobert.</p>
+          </div>
+          <hr class="escriptori-ocult tableta-ocult mostrar-mobil">
+          <div class="columna tres mobil-complet">
+            <h2 class="sense-estil-de-capsalera fort majuscules text-centrat marge-baix">Reticle full d'estil</h2>
+            <ul class="sense-estil-de-llista text-centrat font-gran">
+              <li class="icon-file-css text-centrat en-linia"></li>
+              <li class="icon-file-xml text-centrat en-linia"></li>
+            </ul>
+            <p class="text-centrat">Estils de tipografia, taules, comentaris, cites, formularis i molt més.</p>
+          </div>
+          <hr class="escriptori-ocult tableta-ocult mostrar-mobil">
+          <div class="columna tres mobil-complet">
+            <h2 class="sense-estil-de-capsalera fort majuscules text-centrat marge-baix">En tots els navegadors</h2>
+            <ul class="sense-estil-de-llista text-centrat font-gran">
+              <li class="icon-safari text-centrat en-linia"></li>
+              <li class="icon-firefox text-centrat en-linia"></li>
+              <li class="icon-chrome text-centrat en-linia"></li>
+              <li class="icon-IE text-centrat en-linia"></li>
+              <li class="icon-opera text-centrat en-linia"></li>
+            </ul>
+            <p class="text-centrat">IE7 +, i navegadors moderns com Safari, Chrome, Firefox <span class="no-tablet"> i Opera.</span>.</p>
+          </div>
+          <hr class="escriptori-ocult tableta-ocult mostrar-mobil">
+          <div class="columna tres mobil-complet">
+            <h2 class="sense-estil-de-capsalera fort majuscules text-centrat marge-baix">Fonament impressionant</h2>
+            <ul class="sense-estil-de-llista text-centrat font-gran">
+              <li class="icon-html5 text-centrat en-linia"></li>
+              <li class="icon-css3 text-centrat en-linia"></li>
+            </ul>
+            <p class="text-centrat">Construït sobre Normalize.css i inclou la majoria dels estils i el disseny. Tot escrit en HTML5 i CSS3.</p>
+          </div>
+        </div>
+      </section>
+      <section class="contingut">
+        <h2 class="h4 titol">
+          <span class="text-de-titol majuscules fort">
+            Començar amb Reticle
+          </span>
+        </h2>
+        <div class="contenidor-complet contenidor-tableta contenidor-mobil sis-fileres netejar">
+          <img class="columna bloc bordered tableta-centrat mobil-ocult" src="assets/img/code.jpg" alt="Code">
+          <div class="columna mitja tableta-deu tableta-centrat mobil-complet">
+            <h3>Reticle,CodeKit i Sublime Text 2 es igual a Exit</h3>
+            <p>
+              Després de la descàrrega de Reticle, es bo tindre a les seves mans un compilador CSS com <a href="http://incident57.com/codekit/" target="_blank">CodeKit</a> i un bon editor de codi com <a href="http://www.sublimetext.com/2" target="_blank">Sublime Text Editor 2</a>. Alguns coneixements bàsics d'HTML i CSS son molt recomanables també. Tot junt fa una bona base per al exit!
+            </p>
+            <span class="block buttons">
+              <a class="boto boto-mitja boto-taronja tableta-complet mobil-complet" href="http://www.sublimetext.com/2" target="_blank">Obtindre Sublime Text Editor</a>
+              <a class="boto boto-mitja boto-taronja tableta-complet mobil-complet" href="http://incident57.com/codekit/" target="_blank">Obtindre CodeKit</a>
+              <a class="boto boto-mitja boto-taronja tableta-complet mobil-complet" href="https://github.com/kikogirbes/reticle/archive/master.zip">Descarregar Reticle</a>
             </span>
           </div>
         </div>
-      </div>
-    </section>
-    <footer class="peu text-centrat font-blanca ">
-      <strong class="h4 titol-gris bloc">
-        <span class="text-de-titol majuscules fort fons-gris">
-          col · labora
-        </span>
-      </strong>
-      <p class="contenidor-complet contenidor-tableta contenidor-mobil netejar">Reticle està en desenvolupament actiu i qualsevol comentari per fer millores són més que benvinguts. Ets lliure de <br><a href="https://github.com/kikogirbes/reticle/">veure aquest dipòsit en Github</a></p>
-    </footer>
+
+        <div class="fons-groc">
+          <div class="contenidor-complet contenidor-tableta contenidor-mobil sis-fileres farcit-dalt-40 farcit-baix-40 netejar ">
+            <div class="contenidor-complet contenidor-tableta contenidor-mobil netejar">
+              <div class="columna mitja tableta-deu tableta-centrat mobil-complet">
+                <h3>Busseig en l'estructura de Reticle</h3>
+                <strong>Inclou el següent conjunt d'arxius:</strong>
+                <ul>
+                  <li>Arxius de LESS per personalitzar fàcilment el seu full d'estil de Reticle</li>
+                  <li>Bàsic de la plantilla HTML5 que inclou jQuery per començar</li>
+                  <li>Arxiu javascript per defecte amb millores de base i modernizr.js i fittext.js</li>
+                  <li>Les tres mides d'icones tàctils d'Apple per l'iPhone 3, iPad i iPhone 4 amb retina + el favicon estàndard per a tots els navegadors web</li>
+                  <li>Base d'estils que conté estils de tipografia, comentaris, cites, taules, formularis i més + una reixeta 12 columnes flexibles</li>
+                </ul>
+              </div>
+              <img class="dreta bloc tableta-centrat mobil-ocult" src="assets/img/files.png" alt="Files">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="contenidor-complet contenidor-tableta contenidor-mobil sis-fileres netejar">
+          <img class="posicio-absoluta bloc bordered tableta-ocult mobil-ocult" src="assets/img/docs.png" alt="Docs" style="margin-left: -200px; margin-top: -70px;">
+          <div class="dreta mitja tableta-deu tableta-centrat mobil-complet">
+            <h3>Veure la documentació i Demostracions</h3>
+            <h4 class="no-style-heading strong"><a href="documentacio/">Introducció</a></h4>
+            <p class="sense-marges">
+              Una visió general de la base i els arxius i components inclosos.
+            </p>
+            <hr class="marge-baix">
+            <h4 class="no-style-heading strong"><a href="documentacio/reticle.html">Disseny de Reticle</a></h4>
+            <p class="sense-marges">
+             El sistema de xarxa de gran abast que utilitza una variació del sistema de la reticle 960.
+            </p>
+            <hr class="marge-baix">
+            <h4 class="no-style-heading strong"><a href="documentacio/tipografia.html">Tipografia</a></h4>
+            <p class="sense-marges">
+              De valors predeterminats globals a tota la tipografia, aquesta secció té tot.
+            </p>
+          </div>
+        </div>
+        <div class="fons-groc filera">
+          <div class="contenidor-complet contenidor-tableta contenidor-mobil netejar seccio">
+            <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
+            <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
+            <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
+            <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
+            <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
+            <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
+            <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
+            <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
+            <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
+            <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
+            <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
+            <div class="columna una tableta-una mobil-una fons-roig altura-de-columna"></div>
+            <div class="posicio-absoluta dotze tableta-dotze mobil-once marge-dalt-50 fons-groc-transparent font-blanca">
+              <div class="text-centrat">
+                <h3>Última Actualització</h3>
+                  <p id="github">
+                    <span class="block date">28 de Agost, 2013</span> 
+                    <span class="bloc description"></span>
+                    <a href="https://github.com/kikogirbes/reticle/commit/8d645cd1a9f76ad7d56d3e25a8eb4a641aac2f52" target="_blank" class="font-blanca marge-dalt bloc commit">Commit 8d645cd1a9f76ad7d56d3e25a8eb4a641aac2f52 »
+                    </a>
+                  </p>
+              </div>
+              <span class="github-logo bloc mobil-ocult">
+                <span class="ocult">Github</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="peu text-centrat font-blanca ">
+        <strong class="h4 titol-gris bloc">
+          <span class="text-de-titol majuscules fort fons-gris">
+            col · labora
+          </span>
+        </strong>
+        <p class="contenidor-complet contenidor-tableta contenidor-mobil netejar">Reticle està en desenvolupament actiu i qualsevol comentari per fer millores són més que benvinguts. Ets lliure de <br><a href="https://github.com/kikogirbes/reticle/">veure aquest dipòsit en Github</a></p>
+      </footer>
+    </div>
     
-  
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="assets/js/plugins/snap.js"></script>
+  <script type="text/javascript">
+      var snapper = new Snap({
+          element: document.getElementById('content'),
+          disable: 'right'
+      });
+
+      var addEvent = function addEvent(element, eventName, func) {
+        if (element.addEventListener) {
+            return element.addEventListener(eventName, func, false);
+          } else if (element.attachEvent) {
+              return element.attachEvent("on" + eventName, func);
+          }
+      };
+
+      addEvent(document.getElementById('open-left'), 'click', function(){
+        snapper.open('left');
+      });
+
+      /* Prevent Safari opening links when viewing as a Mobile App */
+      (function (a, b, c) {
+          if(c in b && b[c]) {
+              var d, e = a.location,
+                  f = /^(a|html)$/i;
+              a.addEventListener("click", function (a) {
+                  d = a.target;
+                  while(!f.test(d.nodeName)) d = d.parentNode;
+                  "href" in d && (d.href.indexOf("http") || ~d.href.indexOf(e.host)) && (a.preventDefault(), e.href = d.href)
+              }, !1)
+          }
+      })(document, window.navigator, "standalone");
+  </script>
+
   <script src="assets/js/plugins-ck.js"></script>
   <script src="assets/js/script-ck.js"></script>
   
