@@ -1,11 +1,11 @@
 /*  -----------------------------------------------------------------------------
 
-        3.  Ajustos de Document
+        3.  Ajustes de Documento
                 
     -----------------------------------------------------------------------------  */
 
 //  =============================================================================
-//  3.0 - Ajustos de Document (tipogràfia, enllaços, paràgraf, etc)
+//  3.0 - Ajustes de Documento (tipografia, enlaces, paragrafo, etc)
 //  ============================================================================= 
 
 //  Body 
@@ -17,21 +17,21 @@ body {
   -ms-text-size-adjust: 100%;
 }
 
-//  Fort i Cursiva
+//  Negrita y Cursiva
 b, strong { .fort(); }
 
-//  Enllaços 
+//  Enlaces 
 a { color: #f30; }
 a:hover { text-decoration: none; }
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0; }
 
 
-//  Paràgraf i Menut
+//  Paragrafo y Small
 p, pre { margin: 1em 0; }
 small { font-size: 80%; }
 
-//  Abreviatures 
+//  Abreviaturas 
 abbr[title] { border-bottom: 1px dotted; }
 
 //  Audio 
@@ -43,7 +43,7 @@ audio:not([controls]) {
   height: 0;
 }
 
-//  Menut, 
+//  Small, 
 //Sub and Sup 
 small { font-size:80%; }
 sub, sup {
@@ -55,10 +55,10 @@ sub, sup {
 sup { top: -.5em; }
 sub { bottom: -.25em; }
 
-//  Definició 
+//  Definición 
 dfn { .cursiva(); }
 
-//  Imatges 
+//  Imágenes 
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -70,7 +70,7 @@ figure { margin: 0; }
 .imatge-dreta { margin-left: 20px; }
 
 
-//  3.1 Encapçalaments - h1, h2, h3, h4, h5, h6 & altres (si hi ha)
+//  3.1 Encabezados - h1, h2, h3, h4, h5, h6 & altres (si hay)
 //  ============================================================================= 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -100,13 +100,13 @@ h6, .h6 {
   .font-size(@h6);
   margin-bottom: .5em;
 }
-//  Restablir Encapçalaments
+//  Reestablecer encabezados
 .sense-estil-de-capsalera {
   margin: 0;
   font-size: 100%;
 }
 
-//  Regla Horitzontal
+//  Regla Horizontal
 hr {
   border: 0;
   background: none;
@@ -120,9 +120,9 @@ hr {
 }
 
 
-//  3.2 Comilles i Codí - cites de text, comilles, codí, pre, etc
+//  3.2 Comiilas y "Codí" - citas de texto, comillas, "codí", pre, etc...
 //  ============================================================================= 
-//  Cites de text i Comilles 
+//  Citas de texto y Comillas 
 blockquote {
   font-family: "Georgia", "Times" serif;
   .font-size(20);
@@ -160,7 +160,7 @@ code {
   .arrodonit(3);
 }
 
-//  3.3 Llistes
+//  3.3 Listas
 //  ============================================================================= 
 dl, menu, ol, ul {
   margin: 1em 0;
